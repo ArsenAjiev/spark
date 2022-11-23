@@ -1,4 +1,9 @@
 ```text
+https://hub.docker.com/r/bitnami/spark#environment-variables
+
+```
+
+```text
 # copy docker-compose.yml
 ```
 
