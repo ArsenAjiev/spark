@@ -27,6 +27,8 @@ docker-compose up -d --build
 docker exec -it <container_id> bash
 ```
 
+### run scala code inside shell
+
 ```shell
 
 val df = spark.read.format("csv").option("header", "true").load("/opt/spark/titanic.csv")
@@ -45,6 +47,11 @@ df.select("Name", "Age").show()
 ```shell
 
 df.select("Name", "Age").filter("Age > 30").show()
+
+
 ```
+### run .py script
 
-
+```shell
+spark-submit friends-by-age.py
+```
